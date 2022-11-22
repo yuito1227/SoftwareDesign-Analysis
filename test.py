@@ -12,7 +12,7 @@ class Test_CSVPrinter(unittest.TestCase):
         current_values = [
             ["Value1A","Value1B","Value1C"],
             ["Value2A","Value2B","Value2C"],
-            ["Value3A","Value3B","Valu›e3C"]
+            ["Value3A","Value3B","Value3C"]
             ]
         l = printer.read()
         self.assertEqual(current_values,l)
