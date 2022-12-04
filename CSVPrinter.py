@@ -8,3 +8,9 @@ class CSVPrinter:
             reader = csv.reader(f)
             lines = [row for row in reader]
         return lines
+    def save_sum(self, column):
+        l = self.read()
+        data = l[:][column]
+        sum(data)
+
+
