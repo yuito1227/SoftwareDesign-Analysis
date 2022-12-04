@@ -1,4 +1,5 @@
 import csv
+import numpy as np
 
 class CSVPrinter:
     def __init__(self, file_name):
@@ -9,8 +10,8 @@ class CSVPrinter:
             lines = [row for row in reader]
         return lines
     def save_sum(self, column):
-        l = self.read()
-        data = l[:][column]
-        sum(data)
+        l = np.array(self.read())
+        extracted_data = l[:, 2]
+        num_data = [int(d) for d in extracted_data]
 
 
